@@ -37,7 +37,6 @@ $(function() {
             expect(allFeeds[i].url).toBeDefined();
             expect(allFeeds[i].url).not.toBe("");
         }
-        
          });
 
 
