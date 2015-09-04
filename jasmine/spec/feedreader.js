@@ -24,7 +24,7 @@
     	it('have name', function() {
     		for(var i=0; i<allFeeds.length; i++) {
     			expect(allFeeds[i].name).toBeDefined();
-    			expect(typeof allFeed[i].name).toBe('string');
+    			expect(typeof allFeeds[i].name).toBe('string');
     			expect(allFeeds[i].name).not.toBe("");
     			
     		}
