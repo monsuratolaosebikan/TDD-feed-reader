@@ -3,33 +3,33 @@
  * This is the spec file that Jasmine will read and contains tests 
    for the feedreader application */
  $(function() {
-    describe('RSS Feeds', function() {
-    	/* Checks if allFeeds is defined and not empty */
-    	it('are defined', function() {
-    		expect(allFeeds).toBeDefined();
-    		expect(allFeeds instanceof Array).toBeTruthy();
-    		expect(allFeeds.length).not.toBe(0);
-    	});
-
-    	/* Checks if each feed in allFeeds has a valid url */
-    	it('have url', function() {
-    		for(var i=0; i<allFeeds.length; i++) {
-    			expect(allFeeds[i].url).toBeDefined();
-    			expect(allFeeds[i].url).not.toBe("");
-    			expect(allFeeds[i].url).toMatch(/^http(s?)\:\/\//);
-    		}
-    	});
-
-    	/* Checks if each feed in allFeeds has a name */
-    	it('have name', function() {
-    		for(var i=0; i<allFeeds.length; i++) {
-    			expect(allFeeds[i].name).toBeDefined();
-    			expect(typeof allFeeds[i].name).toBe('string');
-    			expect(allFeeds[i].name).not.toBe("");
-    			
-    		}
-    	});
-    });
+	describe('RSS Feeds', function() {
+	    	/* Checks if allFeeds is defined and not empty */
+	    	it('are defined', function() {
+	    		expect(allFeeds).toBeDefined();
+	    		expect(allFeeds instanceof Array).toBeTruthy();
+	    		expect(allFeeds.length).not.toBe(0);
+	    	});
+	
+	    	/* Checks if each feed in allFeeds has a valid url */
+	    	it('have url', function() {
+	    		for(var i=0; i<allFeeds.length; i++) {
+	    			expect(allFeeds[i].url).toBeDefined();
+	    			expect(allFeeds[i].url).not.toBe("");
+	    			expect(allFeeds[i].url).toMatch(/^http(s?)\:\/\//);
+	    		}
+	    	});
+	
+	    	/* Checks if each feed in allFeeds has a name */
+	    	it('have name', function() {
+	    		for(var i=0; i<allFeeds.length; i++) {
+	    			expect(allFeeds[i].name).toBeDefined();
+	    			expect(typeof allFeeds[i].name).toBe('string');
+	    			expect(allFeeds[i].name).not.toBe("");
+	    			
+	    		}
+	    	});
+	});
 
 	describe('The menu', function() {
 
@@ -78,5 +78,5 @@
 			done();
 		});
 	});
-});
+ });
 
