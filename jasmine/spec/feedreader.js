@@ -66,15 +66,16 @@
 			$('.feed').empty();
 			loadFeed(0, function() {
 				feed1 = $('.feed').html();
-			});
-			loadFeed(1, function() {
-				feed2 = $('.feed').html();
-				done();
+				loadFeed(1, function() {
+					feed2 = $('.feed').html();
+					done();
+				});
 			});
 		});
 		
 		it('changes feed content', function(done) {
 			expect(feed1).not.toEqual(feed2);
+			done();
 		});
 	});
 });
