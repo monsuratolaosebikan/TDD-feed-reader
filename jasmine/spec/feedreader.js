@@ -45,7 +45,7 @@
 			$('.menu-icon-link').click();
 			expect($('body').hasClass('menu-hidden')).toBe(true);
 		});
-    });
+    	});
 
 	/* Checks if loadFeed successfully creates a new entry element in the feed container */
 	describe('Initial Entries', function() {
@@ -54,7 +54,7 @@
 		});
 
 		it('has a single .entry element within the .feed container', function() {
-			expect($('.feed .entry').length.toBeGreaterThan(0);
+			expect($('.feed .entry').length).toBeGreaterThan(0);
 		});
    	});
 
